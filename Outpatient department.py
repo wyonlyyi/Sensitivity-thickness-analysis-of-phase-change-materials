@@ -68,9 +68,6 @@ sort_axis = operator.itemgetter(0)
 sorted_zip = sorted(zip(X, predictions), key=sort_axis)
 X, predictions = zip(*sorted_zip)
 
-#plt.plot(X, predictions, color='red', label='Fitted line')
-#plt.plot(X, predictions, "goldenrod",label="Fitted line y$_{1}$")
-
 x = np.linspace(0, 20, 400)
 y1 = -3.439090e+00 * x + 1.807918e+00 * x**2 - 4.796184e-01 * x**3 + 7.089998e-02 * x**4 - 6.144393e-03 * x**5 + 3.101906e-04 * x**6 - 8.441244e-06 * x**7 + 9.565940e-08 * x**8 + 1.873567e+02
 plt.plot(x, y1, "goldenrod",label="Fitted line y$_{1}$")
